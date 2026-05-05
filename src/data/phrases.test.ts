@@ -28,7 +28,7 @@ describe("phrases", () => {
 
   test("all IDs are 3-character alphanumeric strings", () => {
     [...verbPhrases, ...metricObjects, ...buzzwordTails].forEach((phrase) => {
-      expect(phrase.id).toMatch(/^[A-Za-z0-9]{3}$/);
+      expect(phrase.id).toMatch(/^[a-z0-9]{3}$/);
     });
   });
 });
