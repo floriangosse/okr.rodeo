@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { buzzwordTails, verbPhrases } from "../data/phrases";
+import { buzzwordTails, metricObjects, verbPhrases } from "../data/phrases";
 import { decodeKR, encodeKR, generateKR } from "./generator";
 
 describe("generator", () => {
@@ -13,8 +13,10 @@ describe("generator", () => {
     for (let i = 0; i < 50; i++) {
       const result = generateKR();
       const hasVerb = verbPhrases.some((v) => result.startsWith(v));
+      const hasMetric = metricObjects.some((m) => result.includes(m));
       const hasTail = buzzwordTails.some((t) => result.endsWith(t));
       expect(hasVerb).toBe(true);
+      expect(hasMetric).toBe(true);
       expect(hasTail).toBe(true);
     }
   });
