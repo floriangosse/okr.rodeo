@@ -23,6 +23,11 @@ export default function KRCard({
       </p>
       {kr && (
         <div className="kr-actions">
+          {(copied || urlCopied) && (
+            <span className="kr-copy-confirm">
+              {copied ? "Copied!" : "Link copied!"}
+            </span>
+          )}
           <button
             className="kr-icon-btn"
             onClick={onCopy}

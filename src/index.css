@@ -56,7 +56,7 @@ body {
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 2rem 2rem 0.75rem;
   min-height: 160px;
   display: flex;
   flex-direction: column;
@@ -132,9 +132,15 @@ body {
 
 .kr-actions {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   gap: 0.25rem;
-  margin-top: 0.5rem;
+}
+
+.kr-copy-confirm {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-right: auto;
 }
 
 .kr-icon-btn {
