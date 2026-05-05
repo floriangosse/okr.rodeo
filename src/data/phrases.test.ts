@@ -26,9 +26,9 @@ describe("phrases", () => {
     checkUnique(buzzwordTails, "buzzwordTails");
   });
 
-  test("all IDs are URL-safe kebab-case", () => {
+  test("all IDs are 8-character nanoid-style strings", () => {
     [...verbPhrases, ...metricObjects, ...buzzwordTails].forEach((phrase) => {
-      expect(phrase.id).toMatch(/^[a-z0-9-]+$/);
+      expect(phrase.id).toMatch(/^[A-Za-z0-9_-]{8}$/);
     });
   });
 });
