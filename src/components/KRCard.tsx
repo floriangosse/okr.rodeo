@@ -1,12 +1,12 @@
 interface KRCardProps {
   kr: string | null;
-  krNumber: number;
+  krId: string | null;
 }
 
-export default function KRCard({ kr, krNumber }: KRCardProps) {
+export default function KRCard({ kr, krId }: KRCardProps) {
   return (
     <div className="kr-card">
-      <span className="kr-number">KR #{krNumber}</span>
+      <span className="kr-number">{krId ?? "KR #—"}</span>
       <p className="kr-text">
         {kr ?? "Click Generate to unlock your next breakthrough"}
       </p>

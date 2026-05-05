@@ -16,7 +16,7 @@ describe("phrases", () => {
   });
 
   test("all IDs are unique within each list", () => {
-    const checkUnique = (list: readonly { id: string }[], name: string) => {
+    const checkUnique = (list: readonly { id: string }[], _name: string) => {
       const ids = list.map((p) => p.id);
       const unique = new Set(ids);
       expect(unique.size).toBe(ids.length);

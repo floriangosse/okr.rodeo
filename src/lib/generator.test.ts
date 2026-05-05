@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { buzzwordTails, metricObjects, verbPhrases } from "../data/phrases";
-import { GeneratedKR, generateKR, krFromId } from "./generator";
+import { generateKR, krFromId } from "./generator";
 
 describe("generator", () => {
   test("generateKR returns a GeneratedKR with non-empty text and krId", () => {

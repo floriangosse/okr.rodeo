@@ -1,32 +1,24 @@
 import { useEffect, useState } from "react";
 import KRCard from "./components/KRCard";
-import { decodeKR, encodeKR, generateKR } from "./lib/generator";
-
-function randomKRNumber(): number {
-  return Math.floor(1000 + Math.random() * 9000);
-}
+import { type GeneratedKR, generateKR, krFromId } from "./lib/generator";
 
 export default function App() {
-  const [kr, setKR] = useState<string | null>(null);
-  const [krNumber, setKRNumber] = useState<number>(randomKRNumber());
+  const [kr, setKR] = useState<GeneratedKR | null>(null);
   const [copied, setCopied] = useState<boolean>(false);
-  const [shareUrlCopied, setShareUrlCopied] = useState<boolean>(false);
   const [shareUrl, setShareUrl] = useState<string | null>(null);
+  const [shareUrlCopied, setShareUrlCopied] = useState<boolean>(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const encoded = params.get("kr");
-    const decoded = decodeKR(encoded);
-    if (decoded) {
-      setKR(decoded);
-      setKRNumber(randomKRNumber());
+    const id = params.get("kr");
+    const loaded = krFromId(id);
+    if (loaded) {
+      setKR(loaded);
     }
   }, []);
 
   function handleGenerate() {
-    const newKR = generateKR();
-    setKR(newKR);
-    setKRNumber(randomKRNumber());
+    setKR(generateKR());
     setCopied(false);
     setShareUrl(null);
     window.history.replaceState(null, "", window.location.pathname);
@@ -34,7 +26,7 @@ export default function App() {
 
   function handleCopy() {
     if (!kr) return;
-    navigator.clipboard.writeText(kr).then(() => {
+    navigator.clipboard.writeText(kr.text).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });
@@ -42,9 +34,9 @@ export default function App() {
 
   function handleShare() {
     if (!kr) return;
-    const url = `${window.location.origin}${window.location.pathname}?kr=${encodeKR(kr)}`;
+    const url = `${window.location.origin}${window.location.pathname}?kr=${kr.krId}`;
     setShareUrl(url);
-    window.history.replaceState(null, "", `?kr=${encodeKR(kr)}`);
+    window.history.replaceState(null, "", `?kr=${kr.krId}`);
   }
 
   function handleCopyShareUrl() {
@@ -65,7 +57,7 @@ export default function App() {
       </header>
 
       <main className="main">
-        <KRCard kr={kr} krNumber={krNumber} />
+        <KRCard kr={kr?.text ?? null} krId={kr?.krId ?? null} />
 
         <div className="actions">
           <button className="btn btn-primary" onClick={handleGenerate}>
