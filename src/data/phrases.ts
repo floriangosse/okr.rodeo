@@ -13,7 +13,7 @@ function validate(data: unknown, listName: string): readonly Phrase[] {
     if (typeof item !== "object" || item === null)
       throw new Error(`${listName}[${i}]: expected object`);
     const { id, text } = item as Record<string, unknown>;
-    if (typeof id !== "string" || !/^[a-z0-9]{3}$/.test(id))
+    if (typeof id !== "string" || !/^[A-Z0-9]{3}$/.test(id))
       throw new Error(`${listName}[${i}]: invalid id "${String(id)}"`);
     if (typeof text !== "string" || text.trim() === "")
       throw new Error(`${listName}[${i}]: invalid text`);

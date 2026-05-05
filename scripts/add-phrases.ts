@@ -2,7 +2,7 @@ import { customAlphabet } from "nanoid";
 import { readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
 
-const ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyz";
+const ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const gen = customAlphabet(ALPHABET, 3);
 
 interface PhraseEntry {
