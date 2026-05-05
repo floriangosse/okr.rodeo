@@ -5,23 +5,19 @@ import { type GeneratedKR, generateKR, krFromId } from "./lib/generator";
 export default function App() {
   const [kr, setKR] = useState<GeneratedKR | null>(null);
   const [copied, setCopied] = useState<boolean>(false);
-  const [shareUrl, setShareUrl] = useState<string | null>(null);
-  const [shareUrlCopied, setShareUrlCopied] = useState<boolean>(false);
+  const [urlCopied, setUrlCopied] = useState<boolean>(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const id = params.get("kr");
-    const loaded = krFromId(id);
-    if (loaded) {
-      setKR(loaded);
-    }
+    const loaded = krFromId(params.get("kr"));
+    if (loaded) setKR(loaded);
   }, []);
 
   function handleGenerate() {
     const newKR = generateKR();
     setKR(newKR);
     setCopied(false);
-    setShareUrl(null);
+    setUrlCopied(false);
     window.history.replaceState(null, "", `?kr=${newKR.krId}`);
   }
 
@@ -33,18 +29,12 @@ export default function App() {
     });
   }
 
-  function handleShare() {
+  function handleCopyUrl() {
     if (!kr) return;
     const url = `${window.location.origin}${window.location.pathname}?kr=${kr.krId}`;
-    setShareUrl(url);
-    window.history.replaceState(null, "", `?kr=${kr.krId}`);
-  }
-
-  function handleCopyShareUrl() {
-    if (!shareUrl) return;
-    navigator.clipboard.writeText(shareUrl).then(() => {
-      setShareUrlCopied(true);
-      setTimeout(() => setShareUrlCopied(false), 2000);
+    navigator.clipboard.writeText(url).then(() => {
+      setUrlCopied(true);
+      setTimeout(() => setUrlCopied(false), 2000);
     });
   }
 
@@ -58,44 +48,20 @@ export default function App() {
       </header>
 
       <main className="main">
-        <KRCard kr={kr?.text ?? null} krId={kr?.krId ?? null} />
+        <KRCard
+          kr={kr?.text ?? null}
+          krId={kr?.krId ?? null}
+          copied={copied}
+          urlCopied={urlCopied}
+          onCopy={handleCopy}
+          onCopyUrl={handleCopyUrl}
+        />
 
         <div className="actions">
           <button className="btn btn-primary" onClick={handleGenerate}>
             Generate
           </button>
-          <button
-            className="btn btn-secondary"
-            onClick={handleCopy}
-            disabled={!kr}
-          >
-            {copied ? "✓ Copied" : "Copy"}
-          </button>
         </div>
-
-        {kr && (
-          <div className="share">
-            {!shareUrl ? (
-              <button className="share-link" onClick={handleShare}>
-                Share this KR →
-              </button>
-            ) : (
-              <div className="share-url-row">
-                <input
-                  className="share-url-input"
-                  readOnly
-                  value={shareUrl}
-                />
-                <button
-                  className="btn btn-secondary"
-                  onClick={handleCopyShareUrl}
-                >
-                  {shareUrlCopied ? "✓ Copied" : "Copy URL"}
-                </button>
-              </div>
-            )}
-          </div>
-        )}
       </main>
 
       <footer className="footer">

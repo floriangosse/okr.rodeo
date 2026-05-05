@@ -130,46 +130,30 @@ body {
   background: #e5e7eb;
 }
 
-.share {
+.kr-actions {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
 }
 
-.share-link {
-  background: none;
+.kr-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
   border: none;
-  color: #0052cc;
-  font-size: 0.875rem;
+  background: none;
+  color: #9ca3af;
   cursor: pointer;
-  padding: 0;
-  text-align: left;
-  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
 }
 
-.share-link:hover {
-  text-decoration: underline;
-}
-
-.share-url-row {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.share-url-input {
-  flex: 1;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  font-size: 0.8rem;
-  color: #6b7280;
-  background: #f9fafb;
-  outline: none;
-}
-
-.share-url-input:focus {
-  outline: 2px solid #0052cc;
-  outline-offset: 1px;
+.kr-icon-btn:hover {
+  background: #f3f4f6;
+  color: #374151;
 }
 
 .footer {
