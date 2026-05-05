@@ -1,0 +1,402 @@
+[
+  {
+    "id": "v12",
+    "text": "NPS by 40%"
+  },
+  {
+    "id": "vk2",
+    "text": "time-to-value by 3x"
+  },
+  {
+    "id": "vrz",
+    "text": "cross-functional bandwidth by 110%"
+  },
+  {
+    "id": "j1y",
+    "text": "quarterly synergy score by EOQ"
+  },
+  {
+    "id": "ojb",
+    "text": "EBITDA-adjacent KPIs by 2 sprints"
+  },
+  {
+    "id": "8xh",
+    "text": "customer delight index by Q3"
+  },
+  {
+    "id": "3sx",
+    "text": "developer velocity by 2x"
+  },
+  {
+    "id": "hqi",
+    "text": "stakeholder alignment by 85%"
+  },
+  {
+    "id": "scy",
+    "text": "thought leadership output by 200%"
+  },
+  {
+    "id": "cu4",
+    "text": "organizational agility by one full quarter"
+  },
+  {
+    "id": "l7j",
+    "text": "our go-to-market readiness by 360 degrees"
+  },
+  {
+    "id": "fli",
+    "text": "net retention by a hockey-stick amount"
+  },
+  {
+    "id": "7px",
+    "text": "team engagement scores beyond 9000"
+  },
+  {
+    "id": "mfu",
+    "text": "pipeline coverage by at least one paradigm shift"
+  },
+  {
+    "id": "rml",
+    "text": "brand equity through the roof"
+  },
+  {
+    "id": "zao",
+    "text": "the innovation funnel by 47%"
+  },
+  {
+    "id": "s2m",
+    "text": "core synergies to double digits"
+  },
+  {
+    "id": "7rv",
+    "text": "OKR completion rates meta-OKR"
+  },
+  {
+    "id": "8d7",
+    "text": "headcount efficiency until morale improves"
+  },
+  {
+    "id": "g0r",
+    "text": "vibes-based metrics by Q4"
+  },
+  {
+    "id": "sil",
+    "text": "monthly active users by 150%"
+  },
+  {
+    "id": "uu2",
+    "text": "churn rate by 25 basis points"
+  },
+  {
+    "id": "yvu",
+    "text": "gross margin by 300bps by fiscal year end"
+  },
+  {
+    "id": "9n3",
+    "text": "sales cycle length by 2x"
+  },
+  {
+    "id": "f2s",
+    "text": "CAC by 30% while maintaining LTV"
+  },
+  {
+    "id": "dd2",
+    "text": "P99 latency by the end of the sprint"
+  },
+  {
+    "id": "16d",
+    "text": "on-call burden by one full tier"
+  },
+  {
+    "id": "x4n",
+    "text": "sprint velocity by 15%"
+  },
+  {
+    "id": "yxi",
+    "text": "feature adoption rate by 40%"
+  },
+  {
+    "id": "mxy",
+    "text": "documentation coverage by 80%"
+  },
+  {
+    "id": "qyc",
+    "text": "technical debt ratio by Q2"
+  },
+  {
+    "id": "6yb",
+    "text": "API response times by 50ms"
+  },
+  {
+    "id": "fcy",
+    "text": "conversion rate by 2.5 percentage points"
+  },
+  {
+    "id": "13c",
+    "text": "average contract value by $50K"
+  },
+  {
+    "id": "917",
+    "text": "net revenue retention to 120%"
+  },
+  {
+    "id": "nmu",
+    "text": "product-market fit score to green"
+  },
+  {
+    "id": "yb2",
+    "text": "employee NPS to industry-leading levels"
+  },
+  {
+    "id": "046",
+    "text": "meeting culture by eliminating 30% of syncs"
+  },
+  {
+    "id": "3p6",
+    "text": "return on attention by 3x"
+  },
+  {
+    "id": "t8h",
+    "text": "signal-to-noise ratio in our data"
+  },
+  {
+    "id": "9ij",
+    "text": "shipping cadence to weekly"
+  },
+  {
+    "id": "8r4",
+    "text": "test coverage to 90%"
+  },
+  {
+    "id": "6v9",
+    "text": "deploy frequency by 5x"
+  },
+  {
+    "id": "wz3",
+    "text": "mean time to recovery by 80%"
+  },
+  {
+    "id": "ml3",
+    "text": "incident rate by two sigmas"
+  },
+  {
+    "id": "2az",
+    "text": "context-switching overhead by 40%"
+  },
+  {
+    "id": "6g8",
+    "text": "cognitive load across all squads"
+  },
+  {
+    "id": "8bu",
+    "text": "bus factor by distributing critical knowledge"
+  },
+  {
+    "id": "wkv",
+    "text": "retention cohort from 6 months to 12 months"
+  },
+  {
+    "id": "chz",
+    "text": "social proof velocity by EOQ"
+  },
+  {
+    "id": "1rj",
+    "text": "ARR to $10M by doing whatever it takes"
+  },
+  {
+    "id": "vlw",
+    "text": "our north star metric by north-starring harder"
+  },
+  {
+    "id": "u7j",
+    "text": "revenue per employee ratio by 1.5x"
+  },
+  {
+    "id": "81i",
+    "text": "cross-sell rate by 30% in existing accounts"
+  },
+  {
+    "id": "17m",
+    "text": "account health score to all green"
+  },
+  {
+    "id": "3j0",
+    "text": "top-of-funnel efficiency by 40%"
+  },
+  {
+    "id": "zsi",
+    "text": "qualified pipeline by $5M"
+  },
+  {
+    "id": "jlc",
+    "text": "win rate against top 3 competitors"
+  },
+  {
+    "id": "6mt",
+    "text": "market share in our core ICP by 2 points"
+  },
+  {
+    "id": "rrx",
+    "text": "share of wallet in our top 20 accounts"
+  },
+  {
+    "id": "ehx",
+    "text": "close rate on late-stage deals by identifying champion gaps"
+  },
+  {
+    "id": "77v",
+    "text": "renewal rate to above 95%"
+  },
+  {
+    "id": "62v",
+    "text": "onboarding time-to-value by 10 days"
+  },
+  {
+    "id": "wb4",
+    "text": "support ticket volume by improving documentation"
+  },
+  {
+    "id": "xks",
+    "text": "CSAT scores to above 4.5"
+  },
+  {
+    "id": "3oe",
+    "text": "expansion revenue to 30% of total ARR"
+  },
+  {
+    "id": "5jn",
+    "text": "logo retention to best-in-class for our segment"
+  },
+  {
+    "id": "y5q",
+    "text": "power user ratio from 20% to 35%"
+  },
+  {
+    "id": "7lq",
+    "text": "daily active usage per seat by gamifying the product"
+  },
+  {
+    "id": "kdm",
+    "text": "time-to-first-value from 14 days to 3"
+  },
+  {
+    "id": "fkf",
+    "text": "activation rate by removing all the boring stuff"
+  },
+  {
+    "id": "okq",
+    "text": "freemium conversion to above 8%"
+  },
+  {
+    "id": "odq",
+    "text": "referral rate by making the product worth talking about"
+  },
+  {
+    "id": "acr",
+    "text": "AI feature adoption to 60% of MAU"
+  },
+  {
+    "id": "1vz",
+    "text": "uptime SLA to five nines"
+  },
+  {
+    "id": "hg5",
+    "text": "error budget spend to under 50%"
+  },
+  {
+    "id": "489",
+    "text": "infrastructure cost per unit of output by 40%"
+  },
+  {
+    "id": "7ft",
+    "text": "cloud spend efficiency by rightsizing everything"
+  },
+  {
+    "id": "llg",
+    "text": "diversity index by one standard deviation"
+  },
+  {
+    "id": "7ql",
+    "text": "compound annual growth rate to the moon"
+  },
+  {
+    "id": "5hf",
+    "text": "competitive displacement to 15 accounts"
+  },
+  {
+    "id": "q00",
+    "text": "proof-of-concept-to-close rate to above 50%"
+  },
+  {
+    "id": "qqf",
+    "text": "seat expansion in existing accounts by 25%"
+  },
+  {
+    "id": "q5e",
+    "text": "multi-threading score in all enterprise deals"
+  },
+  {
+    "id": "bd0",
+    "text": "knowledge transfer score before anyone quits"
+  },
+  {
+    "id": "0rk",
+    "text": "time-in-deal by removing friction at every stage"
+  },
+  {
+    "id": "fms",
+    "text": "community engagement score by 200%"
+  },
+  {
+    "id": "yqw",
+    "text": "security posture to a level we can actually say in a pitch"
+  },
+  {
+    "id": "97t",
+    "text": "compliance coverage to every required framework"
+  },
+  {
+    "id": "zn3",
+    "text": "upsell motion by embedding in all QBRs"
+  },
+  {
+    "id": "b85",
+    "text": "executive sponsorship coverage to 100%"
+  },
+  {
+    "id": "3t0",
+    "text": "trust score among enterprise buyers"
+  },
+  {
+    "id": "yo1",
+    "text": "influencer flywheel by one full revolution"
+  },
+  {
+    "id": "h6r",
+    "text": "workspace utilization by right-sizing leases"
+  },
+  {
+    "id": "52w",
+    "text": "product-led growth flywheel by one full revolution"
+  },
+  {
+    "id": "n7k",
+    "text": "number of strategic bets that actually paid off"
+  },
+  {
+    "id": "7ew",
+    "text": "board confidence score by presenting better slides"
+  },
+  {
+    "id": "jyr",
+    "text": "industry buzz score by Q3"
+  },
+  {
+    "id": "0bu",
+    "text": "thought leader index until analysts notice"
+  },
+  {
+    "id": "b3j",
+    "text": "category leadership score by end of year"
+  }
+]
