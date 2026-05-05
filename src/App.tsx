@@ -18,10 +18,11 @@ export default function App() {
   }, []);
 
   function handleGenerate() {
-    setKR(generateKR());
+    const newKR = generateKR();
+    setKR(newKR);
     setCopied(false);
     setShareUrl(null);
-    window.history.replaceState(null, "", window.location.pathname);
+    window.history.replaceState(null, "", `?kr=${newKR.krId}`);
   }
 
   function handleCopy() {
