@@ -101,7 +101,7 @@ body {
     transform 0.1s;
 }
 
-.btn:active {
+.btn:active:not(:disabled) {
   transform: scale(0.98);
 }
 
@@ -165,6 +165,11 @@ body {
   color: #6b7280;
   background: #f9fafb;
   outline: none;
+}
+
+.share-url-input:focus {
+  outline: 2px solid #0052cc;
+  outline-offset: 1px;
 }
 
 .footer {
