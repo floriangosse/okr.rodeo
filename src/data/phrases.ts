@@ -1,4 +1,4 @@
-export const verbPhrases: string[] = [
+export const verbPhrases: readonly string[] = [
   "Increase",
   "Drive",
   "Accelerate",
@@ -21,7 +21,7 @@ export const verbPhrases: string[] = [
   "Right-size",
 ];
 
-export const metricObjects: string[] = [
+export const metricObjects: readonly string[] = [
   "NPS by 40%",
   "time-to-value by 3x",
   "cross-functional bandwidth by 110%",
@@ -44,7 +44,7 @@ export const metricObjects: string[] = [
   "vibes-based metrics by Q4",
 ];
 
-export const buzzwordTails: string[] = [
+export const buzzwordTails: readonly string[] = [
   "across all verticals",
   "via agile ceremonies",
   "through a customer-centric lens",

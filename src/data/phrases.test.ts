@@ -10,7 +10,6 @@ describe("phrases", () => {
 
   test("all items are non-empty strings", () => {
     [...verbPhrases, ...metricObjects, ...buzzwordTails].forEach((item) => {
-      expect(typeof item).toBe("string");
       expect(item.trim().length).toBeGreaterThan(0);
     });
   });
