@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/testing-library__jest-dom": "^5.14.9",
+    "@vitejs/plugin-react": "^6.0.1",
+    "@vitest/ui": "^4.1.5",
+    "jsdom": "^29.1.1",
+    "oxfmt": "^0.47.0",
+    "oxlint": "^1.62.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.10",
+    "vitest": "^4.1.5"
+  }
+}
