@@ -10,6 +10,7 @@ export default function App() {
   const [kr, setKR] = useState<string | null>(null);
   const [krNumber, setKRNumber] = useState<number>(randomKRNumber());
   const [copied, setCopied] = useState<boolean>(false);
+  const [shareUrlCopied, setShareUrlCopied] = useState<boolean>(false);
   const [shareUrl, setShareUrl] = useState<string | null>(null);
 
   useEffect(() => {
@@ -48,7 +49,10 @@ export default function App() {
 
   function handleCopyShareUrl() {
     if (!shareUrl) return;
-    navigator.clipboard.writeText(shareUrl);
+    navigator.clipboard.writeText(shareUrl).then(() => {
+      setShareUrlCopied(true);
+      setTimeout(() => setShareUrlCopied(false), 2000);
+    });
   }
 
   return (
@@ -93,7 +97,7 @@ export default function App() {
                   className="btn btn-secondary"
                   onClick={handleCopyShareUrl}
                 >
-                  Copy URL
+                  {shareUrlCopied ? "✓ Copied" : "Copy URL"}
                 </button>
               </div>
             )}
